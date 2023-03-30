@@ -1,5 +1,7 @@
 package com.youz.Instance;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 public class InstanceTest {
 
     public static void main(String[] args) {
@@ -12,6 +14,7 @@ public class InstanceTest {
 //        new Phone().playGame();
         PhoneMall mall = new PhoneMall();
         mall.show(new Phone());
+        System.out.println("dsdfs ");
     }
 }
 class Phone{
@@ -24,12 +27,13 @@ class Phone{
     }
     public void showPrice(){
         System.out.println("手机价格为 ： " + price);
-    }
+
 }
 
 class PhoneMall{
     public void show(Phone p2){
         p2.playGame();
         p2.sendEmail();
+
     }
 }
