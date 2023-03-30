@@ -25,11 +25,11 @@ class Phone{
     public void playGame(){
         System.out.println("玩 游 戏 ！");
     }
-    public void showPrice(){
-        System.out.println("手机价格为 ： " + price);
+        public void showPrice(){
+            System.out.println("手机价格为 ： " + price);
 
+    }
 }
-
 class PhoneMall{
     public void show(Phone p2){
         p2.playGame();
